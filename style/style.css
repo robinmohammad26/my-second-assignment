@@ -25,6 +25,11 @@
     display: flex;
 }
 
+/* =========== Hamburger Icon ==================== */
+.hamburgerIcon{
+    display: none;
+}
+
 /* =============== Background Color =================== */
 .dark-color{
     background-color: #1A0B2E;
@@ -72,7 +77,7 @@ nav{
 }
 
 /* ================= Hero Section style ====================== */
-.hero-bg {
+/* .hero-bg {
     background: url("../assets/hero-bg.png") center / cover no-repeat;
     display: flex;
     align-items: center;
@@ -94,7 +99,7 @@ nav{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+} */
 /* =========== About Section Style ================== */
 .about{
     padding: 100px 0;
@@ -271,9 +276,73 @@ footer{
     background-image: url("../assets/footer-bg.png");
     background-position: center;
     background-size: cover;
-    padding: 50px 0;
+    padding: 100px 0;
 }
 .footer-cont{
     text-align: center;
     color: #fff;
+    max-width: 770px;
+    margin: 0 auto;
+}
+.footer-title{
+    font-size: 3.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.footer-link{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+    margin-bottom: 25px;
+}
+.footer-link li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    display: inline-flex;
+}
+.footer-link li a img{
+    margin-right: 10px;
+}
+
+/* ============ Responsive Design ==================== */
+@media screen and (max-width: 576px)
+{
+    /* =========== Navbar Responsive ============= */
+    .menu ,
+    .button{
+        display: none;
+    }
+    .hamburgerIcon{
+        display: block;
+    }
+
+    nav{
+        padding: 0 20px;
+    }
+
+    /* =========== About Section Responsive ============= */
+    .about{
+        padding: 0;
+    }
+    .about-content{
+        padding: 15px 25px;
+    }
+    .about-text {
+        line-height: normal;
+    }
+
+    .about-production{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 30px;
+        margin-bottom: 60px;
+    }
+    .about-item{
+        flex-basis: 50%;
+        text-align: center;
+    }
+
+    /* ================ Choose TechWave Responsive ============= */
+    
 }
