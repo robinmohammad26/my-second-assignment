@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.displayHide{
+    display: none;
+}
+
+/* ============ Share Style =============== */
+.inter-font-style {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.display-flex{
+    display: flex;
+}
+
+/* =============== Background Color =================== */
+.dark-color{
+    background-color: #1A0B2E;
+}
+.light-color{
+    background-color: #230E3D;
+}
+
+/* ================= Header Area Style =================== */
+#header-area{
+    padding: 30px 0;
+}
+nav{
+    justify-content: space-between;
+    align-items: center;
+}
+.logo h1{
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: #fff;
+}
+.logo h1 span{
+    color: purple;
+}
+.menu ul li{
+    list-style: none;
+    margin-right: 20px;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.button button{
+    padding: 12px 16px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    background: linear-gradient(45deg,rgba(247, 233, 63, 2) 0%, rgba(251, 9, 180, 1) 51%, rgba(145, 0, 248, 1) 100%);
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* ================= Hero Section style ====================== */
+.hero-bg {
+    background: url("../assets/hero-bg.png") center / cover no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.hero-cont{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.c-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* =========== About Section Style ================== */
+.about{
+    padding: 100px 0;
+}
+.about-content{
+    text-align: center;
+    padding: 60px 160px;
+    color: #fff;
+}
+.about-title{
+    font-size: 3rem;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+.about-text{
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.about-production{
+    margin-top: 50px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.about-item h1{
+    color: #00FF88;
+    font-size: 2.8rem;
+}
+.about-item p{
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+}
+
+/* ================ Why Choose Us section Style ==================== */
+.choose{
+    padding: 100px 0;
+    color: #fff;
+}
+.whyChoose{
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.choose-con{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
+}
+.wide-rw{
+    grid-row: span 2;
+}
+.wide-col{
+    grid-column: span 2;
+}
+.choose-item{
+    border-radius: 15px;
+    padding: 20px 40px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+    background-color: rgba(53, 17, 101, 0.4);
+    align-content: center;
+}
+.choose-item h3{
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.choose-item p{
+    font-size: 1rem;
+    font-weight: 300;
+}
