@@ -41,6 +41,7 @@
 /* ================= Header Area Style =================== */
 #header-area{
     padding: 30px 0;
+    border-bottom: .5px solid #fefdff48;
 }
 nav{
     justify-content: space-between;
@@ -65,7 +66,8 @@ nav{
     color: #fff;
 }
 
-.button button{
+.button button, 
+.spotify{
     padding: 12px 16px;
     border: none;
     border-radius: 30px;
@@ -77,10 +79,11 @@ nav{
 }
 
 /* ================= Hero Section style ====================== */
-/* .hero-bg {
-    background: url("../assets/hero-bg.png") center / cover no-repeat;
-    display: flex;
-    align-items: center;
+.hero-bg {
+    background-image: url("../assets/hero-bg.png");
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
 }
 
 .hero-cont{
@@ -99,10 +102,56 @@ nav{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-} */
+}
+.new{
+    padding: 4px 14px;
+    background-color: #00FF88;
+    border-radius: 30px;
+    color: #000;
+    position: absolute;
+    top: 3%;
+    right: 14%;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.hero-text{
+    text-align: center;
+    margin-top: 30px;
+    color: #fff;
+}
+.hero-text h1{
+    font-size: 3.6rem;
+    margin-bottom: 12px;
+}
+.hero-text p{
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.spotify{
+    display: inline-flex;
+    margin-right: 8px;
+}
+.spotify img{
+    margin-right: 5px;
+}
+.subscribe{
+    display: inline-flex;
+}
+.subscribe img{
+    margin-right: 5px;
+}
+.subscribe{
+    padding: 12px 22px;
+    border: 1px solid #00FF88;
+    background-color: transparent;
+    border-radius: 30px;
+    color: #00FF88;
+    cursor: pointer;
+}
 /* =========== About Section Style ================== */
 .about{
-    padding: 100px 0;
+    padding: 60px 0;
 }
 .about-content{
     text-align: center;
@@ -320,6 +369,14 @@ footer{
 
     nav{
         padding: 0 20px;
+    }
+
+    /* =============== Hero Section Responsive =============== */
+    .hero-cont{
+        padding: 0 40px;
+    }
+    .hero-text p{
+        margin-bottom: 25px;
     }
 
     /* =========== About Section Responsive ============= */
