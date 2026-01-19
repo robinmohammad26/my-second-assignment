@@ -174,3 +174,50 @@ nav{
     font-size: 1rem;
     font-weight: 300;
 }
+
+/* ============== Featured Section Style ================== */
+.episode{
+    padding: 50px 0;
+}
+.featuredEpi{
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.featured{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    color: #fff;
+}
+.featured-items{
+    background-color: #230E3D;
+    border-radius: 20px;
+}
+.iframs iframe{
+    width: 100%;
+    border: none;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.featured-cont{
+    padding: 20px;
+}
+.featured-cont h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.featured-cont p{
+    font-size: .9rem;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+.featured-cont span{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #00FF88;
+}
