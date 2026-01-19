@@ -260,15 +260,16 @@ nav{
     line-height: 25px;
 }
 .hostCont a{
-    padding: 5px;
-    border: 1px solid #fff;
+    padding: 12px;
+    border: 1px solid #8b8b8b7a;
     border-radius: 50%;
-    font-size: 1.5rem;
     margin-right: 15px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
 }
-.hostCont a i{
-    font-size: 1.5rem;
-    color: #fff;
+.hostCont a img{
+    width: 100%;
 }
 
 /* ================= Footer Section Style =================== */
@@ -344,5 +345,62 @@ footer{
     }
 
     /* ================ Choose TechWave Responsive ============= */
+    .choose{
+        padding: 50px 0;
+    }
+    .choose-con{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 25px;
+    }
+    .wide-col{
+        grid-column: span 1;
+    }
+    .wide-rw{
+        grid-row: span 1;
+    }
+    .whyChoose {
+        font-size: 2.3rem;
+    }
+
+    /* ================= Episode section Responsive ================ */
+    .featured{
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+    .featured-items {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    /* ================= Host section Responsive ==================== */
+    .hostSection{
+        margin-top: 8px;
+        margin-bottom: 15px;
+    }
+    .hostTitle{
+        font-size: 2.4rem;
+    }
+    .hostItems{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+        padding: 40px 20px;
+        margin: 0 20px;
+    }
+
+    /* ============== Footer Section Responsive ============== */
     
+    .footer-link{
+        max-width: 300px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-link li{
+        margin: 10px;
+    }
+    .copyRight{
+        margin-top: 15px;
+    }
 }
