@@ -30,6 +30,24 @@
     display: none;
 }
 
+
+/* ========== Animation ================= */
+#nav-link li a::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background-color: #00FF88;
+    transition: width 0.3s ease;
+    transform: translateX(-50%);
+}
+
+#nav-link li a:hover::after{
+    width: 100%;
+}
+
 /* =============== Background Color =================== */
 .dark-color{
     background-color: #1A0B2E;
@@ -53,7 +71,10 @@ nav{
     color: #fff;
 }
 .logo h1 span{
-    color: purple;
+    background: linear-gradient(20deg,rgba(247, 233, 63, 2) 15%, rgba(251, 9, 180, 1) 51%, rgba(145, 0, 248, 1) 100%);
+    color: transparent;
+    background-clip: text;
+    display: inline-block;
 }
 .menu ul li{
     list-style: none;
@@ -64,6 +85,7 @@ nav{
     font-size: 1rem;
     font-weight: 400;
     color: #fff;
+    position: relative;
 }
 
 .button button {
@@ -347,6 +369,12 @@ footer{
     font-size: 3.8rem;
     font-weight: 700;
     margin-bottom: 15px;
+}
+.footer-title span{
+    background: linear-gradient(20deg,rgba(247, 233, 63, 2) 15%, rgba(251, 9, 180, 1) 51%, rgba(145, 0, 248, 1) 100%);
+    color: transparent;
+    background-clip: text;
+    display: inline-block;
 }
 .footer-link{
     display: grid;
