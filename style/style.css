@@ -66,13 +66,12 @@ nav{
     color: #fff;
 }
 
-.button button, 
-.spotify{
-    padding: 12px 16px;
+.button button {
+    padding: 12px 20px;
     border: none;
     border-radius: 30px;
     font-size: 1rem;
-    background: linear-gradient(45deg,rgba(247, 233, 63, 2) 0%, rgba(251, 9, 180, 1) 51%, rgba(145, 0, 248, 1) 100%);
+    background: linear-gradient(20deg,rgba(247, 233, 63, 2) 10%, rgba(251, 9, 180, 1) 51%, rgba(145, 0, 248, 1) 100%);
     color: #fff;
     font-weight: 500;
     cursor: pointer;
@@ -140,6 +139,16 @@ nav{
 }
 .subscribe img{
     margin-right: 5px;
+}
+.spotify{
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    background: linear-gradient(20deg,rgba(247, 233, 63, 2) 10%, rgba(251, 9, 180, 1) 51%, rgba(145, 0, 248, 1) 100%);
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
 }
 .subscribe{
     padding: 12px 22px;
